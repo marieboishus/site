@@ -1,0 +1,422 @@
+.karla-normal {
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.karla-extra-light {
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.karla-bold {
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.grid-page {
+    display: grid;
+    grid-template-rows:
+    [rowp0] 70px /* accueil - mes infos - photo */
+    [rowp1] 20px /* espace entre mes infos et les expériences pros */
+    [rowp2] 260px /* expériences pros */
+    [rowp3] 460px; /* formations et diplomes */
+    grid-template-columns:
+    [colp0] 70px /* accueil - titre expériences pros */
+    [colp1] 10px
+    [colp2] 570px /* expériences pros */
+    [colp3] 160px /* photo */
+    [colp4] 30px /* titres */
+    [colp5] 30px /* titres */
+    [colp6] 430px; /* blocs bleus et jaunes */
+    gap: 0;
+    overflow-x: auto;
+}
+
+.experiences-pro {
+    display: grid;
+    grid-template-rows:
+    [rowetitres] 70px
+    [rowe39] 19px
+    [rowe38] 19px
+    [rowe37] 5px
+    [rowe36] 19px
+    [rowe35] 19px
+    [rowe34] 19px
+    [rowe33] 5px
+    [rowe32] 19px
+    [rowe31] 19px
+    [rowe30] 19px
+    [rowe29] 19px
+    [rowe28] 5px
+    [rowe27] 19px
+    [rowe26] 19px
+    [rowe25] 19px
+    [rowe24] 5px
+    [rowe23] 19px
+    [rowe22] 19px
+    [rowe21] 19px
+    [rowe20] 19px
+    [rowe19] 19px
+    [rowe18] 19px
+    [rowe17] 19px
+    [rowe16] 5px
+    [rowe15] 19px
+    [rowe14] 19px
+    [rowe13] 19px
+    [rowe12] 5px
+    [rowe11] 19px
+    [rowe10] 19px
+    [rowe9] 19px
+    [rowe8] 19px
+    [rowe7] 5px
+    [rowe6] 19px
+    [rowe5] 5px
+    [rowe4] 19px
+    [rowe3] 5px
+    [rowe2] 19px
+    [rowe1] 5px;
+    grid-template-columns:
+    [coldate] 40px
+    [colstages] 40px
+    [colassistanat] 40px
+    [colworkshops] 40px
+    [colpedagogie] 40px
+    [colenquete] 40px
+    [colbenevolat] 40px
+    [colsaisonnier] 40px
+    [colfinducontenu] 280px
+    [colduree] 90px;
+    gap: 0;
+    overflow-x: auto;
+    margin: 10px;
+    padding: 10px;
+}
+
+.formations-diplomes {
+    display: grid;
+    grid-template-rows:
+    [rowf26] 19px
+    [rowf25] 3px
+    [rowf24] 19px
+    [rowf23] 13px
+    [rowf22] 19px
+    [rowf21] 19px
+    [rowf20] 3px
+    [rowf19] 19px
+    [rowf18] 13px
+    [rowf17] 19px
+    [rowf16] 3px
+    [rowf15] 19px
+    [rowf14] 13px
+    [rowf13] 19px
+    [rowf12] 19px
+    [rowf11] 3px
+    [rowf10] 19px
+    [rowf9] 13px
+    [rowf8] 19px
+    [rowf7] 3px
+    [rowf6] 19px
+    [rowf5] 13px
+    [rowf4] 19px
+    [rowf3] 19px
+    [rowf2] 19px
+    [rowf1] 3px;
+    grid-template-columns:
+    [colannee] 50px
+    [colcontenu] 340px;
+    gap: 0;
+    overflow-x: auto;
+    background-color: rgb(165, 184, 211);
+    margin: 10px;
+    padding: 10px;
+}
+
+.competences {
+    display: grid;
+    grid-template-rows:
+    [rowc11] 28px
+    [rowc10] 28px
+    [rowc9] 28px
+    [rowc8] 28px
+    [rowc7] 28px
+    [rowc6] 28px
+    [rowc5] 28px
+    [rowc4] 28px
+    [rowc3] 28px
+    [rowc2] 28px
+    [rowc1] 28px;
+    grid-template-columns:
+    [colpourcent] 40px
+    [colcomp] 350px;
+    gap: 0;
+    overflow-x: auto;
+    margin: 10px;
+    padding: 10px;
+    line-height: 0.7;
+    background-color: rgb(255, 235, 161);
+}
+
+.titrescolonnes {
+    transform: rotate(315deg) translate(-40%, 50%);
+}
+
+.titresaisonnier {
+    transform: rotate(315deg) translate(30%, -50%);
+}
+
+.titreep {
+    writing-mode: sideways-lr; /* vertical, de bas en haut */
+    text-orientation: mixed;   /* conserve les lettres lisibles */
+    transform: translate(20%, 50%);
+}
+
+.titrecde {
+    writing-mode: sideways-lr; /* vertical, de bas en haut */
+    text-orientation: mixed;   /* conserve les lettres lisibles */
+    transform: translate(-25%, -65%);
+}
+
+.titrefed {
+    writing-mode: sideways-lr; /* vertical, de bas en haut */
+    text-orientation: mixed;   /* conserve les lettres lisibles */
+    transform: translate(20%, -10%);
+}
+
+/* pour placer les datas dans la grille expériences professionnelles */
+.date {
+    grid-column: coldate;
+    font-size: 11px;
+    align-self: end;
+}
+
+/* pour placer les datas dans la grille expériences professionnelles */
+.stages {
+    grid-column: colstages / colduree;
+    align-self: end;
+}
+
+/* pour les lettres de garde */
+.strongstages {
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: 760;
+    color: rgb(241, 172, 184);
+}
+
+/* pour placer les datas dans la grille expériences professionnelles */
+.assistanat {
+    grid-column: colassistanat / colduree;
+    align-self: end;
+}
+/* pour les lettres de garde */
+.strongassistanat {
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: 760;
+    color: rgb(120, 66, 167);
+}
+
+/* pour placer les datas dans la grille expériences professionnelles */
+.workshops {
+    grid-column: colworkshops / colduree;
+    align-self: end;
+}
+/* pour les lettres de garde */
+.strongworkshops {
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: 760;
+    color: rgb(255, 200, 0);
+}
+
+/* pour placer les datas dans la grille expériences professionnelles */
+.pedagogie {
+    grid-column: colpedagogie / colduree;
+    align-self: end;
+}
+
+/* pour les lettres de garde */
+.strongpedagogie {
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: 760;
+    color: rgb(32, 90, 171);
+}
+
+/* pour placer les datas dans la grille expériences professionnelles */
+.enquete {
+    grid-column: colenquete / colduree;
+    align-self: end;
+}
+
+/* pour les lettres de garde */
+.strongenquete {
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: 760;
+    color: rgb(57, 173, 57);
+}
+
+/* pour placer les datas dans la grille expériences professionnelles */
+.benevolat {
+    grid-column: colbenevolat / colduree;
+    align-self: end;
+}
+
+/* pour les lettres de garde */
+.strongbenevolat {
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: 760;
+    color: rgb(253, 83, 156);
+}
+
+/* pour placer les datas dans la grille expériences professionnelles */
+.saisonnier {
+    grid-column: colsaisonnier / colduree;
+    align-self: end;
+}
+
+/* pour les lettres de garde */
+.strongsaisonnier {
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: 760;
+    color: rgb(83, 236, 253);
+}
+
+/* pour placer les datas dans la grille expériences professionnelles */
+.duree {
+    grid-column: colduree;
+    font-size: 11px;
+    align-self: end;
+}
+
+/* pour placer les datas dans la grille formation et diplômes */
+.annee {
+    grid-column: colannee;
+    align-self: end;
+    font-size: 11px;
+}
+
+/* pour placer les datas dans la grille formation et diplômes */
+.contenu {
+    grid-column: colcontenu;
+    align-self: end;
+}
+
+/* pour placer les datas dans la grille formation et diplômes */
+.tickf {
+    position: relative;
+    grid-column: colannee;
+    left: 15px;
+    align-self: end;
+    height: 1px;
+    width: 70px;
+    background: black;
+}
+/* pour placer les datas dans la grille expérience professionnelle */
+.ticke {
+    position: relative;
+    grid-column: coldate;
+    left:15px;
+    height: 1px;
+    background: black;
+    align-self: center;
+}
+
+.tickestages {
+    width: 70px
+}
+
+.tickeworkshops {
+    width: 150px;
+}
+
+.tickepedagogie {
+    width: 180px;
+}
+
+.tickebenevolat {
+    width: 260px;
+}
+
+.tickesaisonnier {
+    width: 300px;
+}
+
+/* pour placer les datas dans la grille compétences */
+.comp {
+    grid-column: colcomp;
+    align-self: center;
+}
+
+/* pour placer les datas dans la grille compétences */
+.pourcent {
+    grid-column: colpourcent;
+    align-self: center;
+}
+
+/* polices d'écriture */
+body {
+    font-family: karla;
+    font-size: 13px;
+    line-height: 0.6;
+}
+
+/* mon nom-prénom */
+h1 {
+    display: inline;
+    font-family: karla;
+    font-size: 50px;
+    font-weight: 230;
+    line-height: 1;
+}
+
+/* titres des 3 parties du CV */
+h2 {
+    font-size: 24px;
+    font-weight: 750;
+    line-height: 1;
+}
+
+/* adresse mail */
+h3 {
+    display: inline;
+    font-size: 19px;
+    font-weight:330;
+    line-height: 0.7;
+}
+
+/*normal mais pour les titres, plus grande hauuteur de lignes */
+h4 {
+    display: inline;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+/* gras et grand pour les exp professionnelles */
+h5 {
+    display: inline;
+    font-size: 16px;
+    font-weight: 700; 
+}
+
+/* écriture petite */
+h6 {
+    display: inline;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 0.7;
+}
+
+.accueil:hover {
+  transform: scale(150%);
+}
