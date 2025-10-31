@@ -32,12 +32,17 @@ body {
     display: grid;
     grid-template-rows:
     [rowp0] 60px /* Marie Boishus */
-    [rowp1] 250px /* CV */
-    [rowp2] 200px /* outils */
-    [rowp3] 250px /* projets */
+    [rowtitre1] 20px
+    [rowp1] 230px /* outils */
+    [rowtitre2] 20px
+    [rowp2] 230px /* projet manifeste */
+    [rowtitre3] 20px
+    [rowp3] 230px /* projets */
+    [rowtitre4] 20px
     [rowp4] 500px /* enquêtes de terrain / mémoires */
     [rowp5] 250px /* suite des mémoires */
-    [rowp6] 60px; /* crédits */
+    [rowp6] 230px /* CV */
+    [rowp7] 60px; /* crédits */
     grid-template-columns:
     [colp1] 350px
     [colp2] 350px
@@ -75,7 +80,7 @@ a {
 }
 
 .outils {
-  grid-row: rowp2;
+  grid-row: rowp1;
 }
 
 .projets {
@@ -92,4 +97,8 @@ a {
 
 .accueil:hover {
   transform: scale(150%);
+}
+
+.titre {
+  border-top: 1px solid white;
 }
