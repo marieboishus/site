@@ -41,6 +41,7 @@ body {
     [rowtitre4] 20px
     [rowp4] 500px /* enquêtes de terrain / mémoires */
     [rowp5] 250px /* suite des mémoires */
+    [rowtitre6] 20px
     [rowp6] 230px /* CV */
     [rowp7] 60px; /* crédits */
     grid-template-columns:
