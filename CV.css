@@ -24,13 +24,13 @@
     grid-template-rows:
     [rowp0] 70px /* accueil - mes infos - photo */
     [rowp1] 20px /* espace entre mes infos et les expériences pros */
-    [rowp2] 260px /* expériences pros */
-    [rowp3] 460px; /* formations et diplomes */
+    [rowp2] 280px /* expériences pros / Compétences et domaines expérimentés */
+    [rowp3] 530px; /* formations et diplomes */
     grid-template-columns:
     [colp0] 70px /* accueil - titre expériences pros */
     [colp1] 10px
-    [colp2] 570px /* expériences pros */
-    [colp3] 160px /* photo */
+    [colp2] 550px /* expériences pros */
+    [colp3] 190px /* photo */
     [colp4] 30px /* titres */
     [colp5] 30px /* titres */
     [colp6] 430px; /* blocs bleus et jaunes */
@@ -41,7 +41,10 @@
 .experiences-pro {
     display: grid;
     grid-template-rows:
-    [rowetitres] 70px
+    [rowetitres] 110px
+    [rowe42] 19px
+    [rowe41] 19px
+    [rowe40] 19px
     [rowe39] 19px
     [rowe38] 19px
     [rowe37] 5px
@@ -84,13 +87,16 @@
     grid-template-columns:
     [coldate] 40px
     [colstages] 40px
-    [colassistanat] 40px
-    [colworkshops] 40px
+    [colcommunications] 40px
     [colpedagogie] 40px
+    [colworkshops] 40px
+    [colassistanat] 40px
     [colenquete] 40px
     [colbenevolat] 40px
     [colsaisonnier] 40px
-    [colfinducontenu] 280px
+    [coljobetudiant] 40px
+    [colbonus] 40px
+    [colfinducontenu] 170px
     [colduree] 90px;
     gap: 0;
     overflow-x: auto;
@@ -140,6 +146,7 @@
 .competences {
     display: grid;
     grid-template-rows:
+    [rowc12] 28px
     [rowc11] 28px
     [rowc10] 28px
     [rowc9] 28px
@@ -163,7 +170,7 @@
 }
 
 .titrescolonnes {
-    transform: rotate(315deg) translate(-40%, 50%);
+    transform: rotate(315deg) translate(-60%, 70%);
 }
 
 .titresaisonnier {
@@ -179,13 +186,13 @@
 .titrecde {
     writing-mode: sideways-lr; /* vertical, de bas en haut */
     text-orientation: mixed;   /* conserve les lettres lisibles */
-    transform: translate(-25%, -65%);
+    transform: translate(-25%, -66%);
 }
 
 .titrefed {
     writing-mode: sideways-lr; /* vertical, de bas en haut */
     text-orientation: mixed;   /* conserve les lettres lisibles */
-    transform: translate(20%, -10%);
+    transform: translate(20%, -16%);
 }
 
 /* pour placer les datas dans la grille expériences professionnelles */
@@ -290,6 +297,35 @@
     font-weight: 760;
     color: rgb(83, 236, 253);
 }
+
+/* pour placer les datas dans la grille expériences professionnelles */
+.jobetudiant {
+    grid-column: coljobetudiant / colduree;
+    align-self: end;
+}
+
+/* pour les lettres de garde */
+.strongjobetudiant {
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: 760;
+    color: rgb(253, 154, 83);
+}
+
+/* pour placer les datas dans la grille expériences professionnelles */
+.communications {
+    grid-column: colcommunications / colduree;
+    align-self: end;
+}
+
+/* pour les lettres de garde */
+.strongcommunications {
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: 760;
+    color: rgb(198, 61, 232);
+}
+
 
 /* pour placer les datas dans la grille expériences professionnelles */
 .duree {
