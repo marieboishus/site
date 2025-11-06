@@ -1,0 +1,104 @@
+.karla-normal {
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.karla-extra-light {
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.karla-bold {
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  font-family: karla;
+  background-color: rgb(196, 196, 196);
+  padding-left: 10rem;
+  padding-right: 10rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.grid-page {
+    display: grid;
+    grid-template-rows:
+    [rowp0] 60px /* Marie Boishus */
+    [rowtitre1] 20px
+    [rowp1] 230px /* outils */
+    [rowtitre2] 20px
+    [rowp2] 230px /* projet manifeste */
+    [rowtitre3] 20px
+    [rowp3] 230px /* projets */
+    [rowtitre4] 20px
+    [rowp4] 500px /* enquêtes de terrain / mémoires */
+    [rowp5] 250px /* suite des mémoires */
+    [rowtitre6] 20px
+    [rowp6] 230px /* CV */
+    [rowp7] 60px; /* crédits */
+    grid-template-columns:
+    [colp1] 350px
+    [colp2] 350px
+    [colp3] 350px;
+    gap: 0;
+    overflow-x: auto;
+    align-items: center;
+}
+
+.case {
+  display: flex;
+  text-align: center; /* centre horizontalement */
+  justify-content: center;
+  align-items: center; /* centre verticalement */
+}
+
+.vignette {
+  border-radius: 3%;
+  width: 300px;
+}
+
+a {
+  color: black;
+}
+
+.sousdiv:hover {
+  cursor: pointer;
+  border: 2px solid white;
+}
+
+.sousdiv:hover a {
+  font-weight: 700;
+  color: white;
+}
+
+.outils {
+  grid-row: rowp1;
+}
+
+.projets {
+  grid-row: rowp3;
+}
+
+.memoires {
+  grid-row: rowp4;
+}
+
+.memoires2 {
+  grid-row: rowp5;
+}
+
+.accueil:hover {
+  transform: scale(150%);
+}
+
+.titre {
+  border-top: 1px solid white;
+}
