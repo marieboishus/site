@@ -39,8 +39,8 @@ body {
     [rowtitre3] 20px
     [rowp3] 230px /* projets */
     [rowtitre4] 20px
-    [rowp4] 500px /* enquêtes de terrain / mémoires */
-    [rowp5] 250px /* suite des mémoires */
+    [rowp4] 400px /* enquêtes de terrain / mémoires */
+    [rowp5] 400px /* suite des mémoires */
     [rowtitre6] 20px
     [rowp6] 230px /* CV */
     [rowp7] 60px; /* crédits */
@@ -62,7 +62,8 @@ body {
 
 .vignette {
   border-radius: 3%;
-  width: 300px;
+  max-width: 300px;
+  max-height: 300px;
 }
 
 a {
