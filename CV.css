@@ -22,15 +22,15 @@
 .grid-page {
     display: grid;
     grid-template-rows:
-    [rowp0] 70px /* accueil - mes infos - photo */
-    [rowp1] 20px /* espace entre mes infos et les expériences pros */
-    [rowp2] 280px /* expériences pros / Compétences et domaines expérimentés */
+    [rowp0] 70px /* accueil - expériences pros - photo - mes infos - */
+    [rowp1] 30px /* espace */
+    [rowp2] 370px /* expériences pros / Compétences et domaines expérimentés */
     [rowp3] 530px; /* formations et diplomes */
     grid-template-columns:
     [colp0] 70px /* accueil - titre expériences pros */
     [colp1] 10px
-    [colp2] 550px /* expériences pros */
-    [colp3] 190px /* photo */
+    [colp2] 500px /* expériences pros */
+    [colp3] 240px /* photo */
     [colp4] 30px /* titres */
     [colp5] 30px /* titres */
     [colp6] 430px; /* blocs bleus et jaunes */
@@ -42,6 +42,8 @@
     display: grid;
     grid-template-rows:
     [rowetitres] 110px
+    [rowe44] 19px
+    [rowe43] 5px
     [rowe42] 19px
     [rowe41] 19px
     [rowe40] 19px
