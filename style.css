@@ -73,6 +73,10 @@ a {
   text-decoration: none;
 }
 
+p {
+  max-width: 800px;
+}
+
 .sousdiv:hover {
   cursor: pointer;
   border: 2px solid white;
