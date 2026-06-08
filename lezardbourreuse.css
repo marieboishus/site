@@ -1,26 +1,27 @@
-.karla-normal {
-  font-family: "Karla", sans-serif;
+.libre-bodoni-normal {
+  font-family: "Libre Bodoni", serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
 
-.karla-extra-light {
-  font-family: "Karla", sans-serif;
+.libre-bodoni-extra-light {
+  font-family: "Libre Bodoni", serif;
   font-optical-sizing: auto;
   font-weight: 200;
   font-style: normal;
 }
 
-.karla-bold {
-  font-family: "Karla", sans-serif;
+
+.libre-bodoni-bold {
+  font-family: "Libre Bodoni", serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
 }
 
 body {
-  font-family: karla;
+  font-family: libre-bodoni;
   font-size: 1rem;
   background-color: rgb(196, 196, 196);
 }
