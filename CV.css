@@ -42,6 +42,10 @@
     display: grid;
     grid-template-rows:
     [rowetitres] 110px
+    [rowe48] 19px
+    [rowe47] 5px
+    [rowe46] 19px
+    [rowe45] 5px
     [rowe44] 19px
     [rowe43] 5px
     [rowe42] 19px
@@ -370,23 +374,27 @@
 }
 
 .tickestages {
-    width: 70px
+    width: 30px
 }
 
 .tickeworkshops {
-    width: 150px;
+    width: 160px;
 }
 
 .tickepedagogie {
-    width: 180px;
+    width: 110px;
 }
 
 .tickebenevolat {
-    width: 260px;
+    width: 270px;
 }
 
 .tickesaisonnier {
-    width: 300px;
+    width: 310px;
+}
+
+.tickejob {
+    width: 350px;
 }
 
 /* pour placer les datas dans la grille compétences */
