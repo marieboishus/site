@@ -42,6 +42,8 @@
     display: grid;
     grid-template-rows:
     [rowetitres] 110px
+    [rowe50] 19px
+    [rowe49] 5px
     [rowe48] 19px
     [rowe47] 5px
     [rowe46] 19px
