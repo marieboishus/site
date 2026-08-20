@@ -42,6 +42,9 @@ body {
     [rowtitreenquete] 20px
     [rowenquete] 400px /* enquêtes de terrain / mémoires */
     [rowenquete2] 400px /* suite des mémoires */
+    [rowenquete3] 400px /* suite des mémoires */
+    [rowtitrepedagogie] 20px
+    [rowpedagogie] 230px
     [rowtitredessins] 20px
     [rowpdessins] 230px
     [rowtitrecv] 20px
@@ -102,6 +105,10 @@ p {
 
 .memoires2 {
   grid-row: rowenquete2;
+}
+
+.memoires3 {
+  grid-row: rowenquete3;
 }
 
 .accueil:hover {
