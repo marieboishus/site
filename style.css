@@ -33,23 +33,23 @@ body {
     grid-template-rows:
     [rowp0] 60px /* Marie Boishus */
     [rowtitreoutils] 20px
-    [rowoutils] 270px /* outils */
+    [rowoutils] 410px /* outils */
     [rowtitreenquete] 20px
-    [rowenquete] 400px /* enquêtes de terrain / mémoires */
+    [rowenquete] 410px /* enquêtes de terrain / mémoires */
     [rowenquete2] 400px /* suite des mémoires */
-    [rowenquete3] 400px /* suite des mémoires */
+    [rowenquete3] 410px /* suite des mémoires */
     [rowtitremanifeste] 20px
-    [rowmanifeste] 240px /* projet manifeste */
+    [rowmanifeste] 270px /* projet manifeste */
     [rowtitrecohabitation] 20px
-    [rowcohabitation] 240px /* projets */
+    [rowcohabitation] 270px /* projets */
     [rowtitreprojet] 20px
-    [rowprojet] 240px /* projets */
+    [rowprojet] 270px /* projets */
     [rowtitrepedagogie] 20px
-    [rowpedagogie] 240px
+    [rowpedagogie] 270px
     [rowtitredessins] 20px
-    [rowpdessins] 240px
+    [rowpdessins] 270px
     [rowtitrecv] 20px
-    [rowcv] 240px /* CV */
+    [rowcv] 270px /* CV */
     [rowcredit] 60px; /* crédits */
     grid-template-columns:
     [colp1] 350px
@@ -110,6 +110,10 @@ p {
 
 .memoires3 {
   grid-row: rowenquete3;
+}
+
+.cohabitation {
+  grid-row: rowcohabitation;
 }
 
 .accueil:hover {
