@@ -36,6 +36,11 @@ body {
   max-width: 150px;
 }
 
+.emfable {
+  color: rgb(32, 101, 166);
+  font-weight: 600;
+}
+
 .vignaccueil {
   display: flex;
   justify-content: center;
@@ -89,6 +94,11 @@ a {
 
 .pretitre {
   height: 3rem;
+}
+
+.liendiscret {
+  color: black;
+  text-decoration: underline;
 }
 
 .container-accueil {
