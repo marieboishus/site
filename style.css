@@ -22,55 +22,40 @@
 body {
   font-family: karla;
   background-color: rgb(196, 196, 196);
-  padding-left: 10rem;
-  padding-right: 10rem;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-
-.grid-page {
-    display: grid;
-    grid-template-rows:
-    [rowp0] 60px /* Marie Boishus */
-    [rowtitreoutils] 20px
-    [rowoutils] 410px /* outils */
-    [rowtitreenquete] 20px
-    [rowenquete] 410px /* enquêtes de terrain / mémoires */
-    [rowenquete2] 400px /* suite des mémoires */
-    [rowenquete3] 410px /* suite des mémoires */
-    [rowtitremanifeste] 20px
-    [rowmanifeste] 270px /* projet manifeste */
-    [rowtitrecohabitation] 20px
-    [rowcohabitation] 270px /* projets */
-    [rowtitreprojet] 20px
-    [rowprojet] 270px /* projets */
-    [rowtitrepedagogie] 20px
-    [rowpedagogie] 270px
-    [rowtitredessins] 20px
-    [rowpdessins] 270px
-    [rowtitrecv] 20px
-    [rowcv] 270px /* CV */
-    [rowcredit] 60px; /* crédits */
-    grid-template-columns:
-    [colp1] 350px
-    [colp2] 350px
-    [colp3] 350px;
-    gap: 0;
-    overflow-x: auto;
-    align-items: center;
-}
-
-.case {
-  display: flex;
-  text-align: center; /* centre horizontalement */
-  justify-content: center;
-  align-items: center; /* centre verticalement */
 }
 
 .vignette {
   border-radius: 3%;
+  max-width: 100%;
+  max-height: 200px;   /* la hauteur max que tu tolères */
+  width: auto;
+  height: auto;
+}
+
+.logo {
+  max-width: 150px;
+}
+
+.vignaccueil {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.centrerdestrucs {
+  display: flex;
+}
+
+.centrerunephoto {
+  display: block;
+  margin: 0 auto;
+}
+
+.case {
+  padding: 1rem;
   max-width: 300px;
-  max-height: 300px;
+  width: 100%;
+  overflow: hidden;
 }
 
 a {
@@ -78,8 +63,8 @@ a {
   text-decoration: none;
 }
 
-p {
-  max-width: 800px;
+.sousdiv {
+  border: 2px solid transparent;
 }
 
 .sousdiv:hover {
@@ -92,34 +77,38 @@ p {
   color: white;
 }
 
-.outils {
-  grid-row: rowoutils;
-}
-
-.projets {
-  grid-row: rowprojet;
-}
-
-.memoires {
-  grid-row: rowenquete;
-}
-
-.memoires2 {
-  grid-row: rowenquete2;
-}
-
-.memoires3 {
-  grid-row: rowenquete3;
-}
-
-.cohabitation {
-  grid-row: rowcohabitation;
-}
-
 .accueil:hover {
   transform: scale(150%);
 }
 
 .titre {
   border-top: 1px solid white;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.pretitre {
+  height: 3rem;
+}
+
+.container-accueil {
+  width: 100%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-left: auto;
+  margin-right: auto;  
+}
+
+@media (min-width: 768px) {
+  .container-accueil {
+    padding-left: 9rem;
+    padding-right: 9rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .container-accueil {
+    padding-left: 15rem;
+    padding-right: 15rem;
+  }
 }
