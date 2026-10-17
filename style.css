@@ -36,9 +36,11 @@ body {
   max-width: 150px;
 }
 
-.emfable {
+.legendefable {
+  background-color: transparent;
   color: rgb(32, 101, 166);
   font-weight: 600;
+  font-style: italic;
 }
 
 .vignaccueil {
@@ -99,6 +101,10 @@ a {
 .liendiscret {
   color: black;
   text-decoration: underline;
+}
+
+mark {
+  font-style: none;
 }
 
 .container-accueil {
