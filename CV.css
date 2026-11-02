@@ -468,3 +468,14 @@ h6 {
 .accueil:hover {
   transform: scale(150%);
 }
+
+.camembert {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+
+  background: conic-gradient(
+    black 0 var(--valeur),
+    rgb(255, 235, 161) var(--valeur) 100%
+  );
+}
