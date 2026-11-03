@@ -22,16 +22,16 @@
 .grid-page {
     display: grid;
     grid-template-rows:
-    [rowp0] 70px /* accueil - expériences pros - photo - mes infos - */
-    [rowp1] 30px /* espace */
+    [rowp0] 110px /* accueil - expériences pros - photo - mes infos - */
     [rowp2] 370px /* expériences pros / Compétences et domaines expérimentés */
-    [rowp3] 530px; /* formations et diplomes */
+    [rowp3] 480px; /* formations et diplomes */
     grid-template-columns:
-    [colp0] 70px /* accueil - titre expériences pros */
+    [colp0] 20px /* accueil - titre expériences pros */
     [colp1] 10px
-    [colp2] 500px /* expériences pros */
-    [colp3] 240px /* photo */
-    [colp4] 30px /* titres */
+    [colp2] 530px /* expériences pros */
+    [colp3] 170px /* photo */
+    [colpinfos] 120px
+    [colp4] 80px /* titres */
     [colp5] 30px /* titres */
     [colp6] 430px; /* blocs bleus et jaunes */
     gap: 0;
@@ -41,70 +41,58 @@
 .experiences-pro {
     display: grid;
     grid-template-rows:
-    [rowetitres] 110px
+    [rowetitres] 140px
     [rowe50] 19px
-    [rowe49] 5px
     [rowe48] 19px
-    [rowe47] 5px
     [rowe46] 19px
-    [rowe45] 5px
+    [rowedesret] 55px
     [rowe44] 19px
+    [rowedeswel] 44px
     [rowe43] 5px
     [rowe42] 19px
+    [rowedescom] 11px
     [rowe41] 19px
     [rowe40] 19px
     [rowe39] 19px
     [rowe38] 19px
     [rowe37] 5px
-    [rowe36] 19px
     [rowe35] 19px
     [rowe34] 19px
+    [rowedesvda] 55px
     [rowe33] 5px
     [rowe32] 19px
     [rowe31] 19px
-    [rowe30] 19px
+    [rowedesmot] 11px
     [rowe29] 19px
     [rowe28] 5px
     [rowe27] 19px
-    [rowe26] 19px
     [rowe25] 19px
     [rowe24] 5px
-    [rowe23] 19px
     [rowe22] 19px
+    [rowedesent] 44px
     [rowe21] 19px
     [rowe20] 19px
+    [rowedesfdo] 44px
     [rowe19] 19px
-    [rowe18] 19px
-    [rowe17] 19px
     [rowe16] 5px
     [rowe15] 19px
     [rowe14] 19px
-    [rowe13] 19px
     [rowe12] 5px
-    [rowe11] 19px
-    [rowe10] 19px
-    [rowe9] 19px
     [rowe8] 19px
     [rowe7] 5px
     [rowe6] 19px
-    [rowe5] 5px
-    [rowe4] 19px
-    [rowe3] 5px
-    [rowe2] 19px
-    [rowe1] 5px;
+    [rowe5] 5px;
     grid-template-columns:
-    [coldate] 40px
+    [coldate] 80px
     [colstages] 40px
     [colcommunications] 40px
     [colpedagogie] 40px
-    [colworkshops] 40px
-    [colassistanat] 40px
     [colenquete] 40px
     [colbenevolat] 40px
     [colsaisonnier] 40px
     [coljobetudiant] 40px
     [colbonus] 40px
-    [colfinducontenu] 170px
+    [colfinducontenu] 320px
     [colduree] 90px;
     gap: 0;
     overflow-x: auto;
@@ -121,15 +109,20 @@
     [rowf23] 13px
     [rowf22] 19px
     [rowf21] 19px
+    [rowfdesm2f] 12px
+    [rowfM1] 19px
+    [rowfdesmas] 12px
     [rowf20] 3px
     [rowf19] 19px
     [rowf18] 13px
     [rowf17] 19px
+    [rowfdeseth] 12px
     [rowf16] 3px
     [rowf15] 19px
     [rowf14] 13px
     [rowf13] 19px
     [rowf12] 19px
+    [rowfdeslic] 12px
     [rowf11] 3px
     [rowf10] 19px
     [rowf9] 13px
@@ -140,6 +133,7 @@
     [rowf4] 19px
     [rowf3] 19px
     [rowf2] 19px
+    [rowfdesbac] 12px
     [rowf1] 3px;
     grid-template-columns:
     [colannee] 50px
@@ -173,7 +167,6 @@
     overflow-x: auto;
     margin: 10px;
     padding: 10px;
-    line-height: 0.7;
     background-color: rgb(255, 235, 161);
 }
 
@@ -188,19 +181,19 @@
 .titreep {
     writing-mode: sideways-lr; /* vertical, de bas en haut */
     text-orientation: mixed;   /* conserve les lettres lisibles */
-    transform: translate(20%, 50%);
+    transform: translate(-40%, 50%);
 }
 
 .titrecde {
     writing-mode: sideways-lr; /* vertical, de bas en haut */
     text-orientation: mixed;   /* conserve les lettres lisibles */
-    transform: translate(-25%, -66%);
+    transform: translate(50%, -66%);
 }
 
 .titrefed {
     writing-mode: sideways-lr; /* vertical, de bas en haut */
     text-orientation: mixed;   /* conserve les lettres lisibles */
-    transform: translate(20%, -16%);
+    transform: translate(50%, -17%);
 }
 
 /* pour placer les datas dans la grille expériences professionnelles */
@@ -222,6 +215,11 @@
     font-size: 18px;
     font-weight: 760;
     color: rgb(241, 172, 184);
+}
+
+.transparent {
+    background-color: transparent;
+    color: transparent;
 }
 
 /* pour placer les datas dans la grille expériences professionnelles */
@@ -376,27 +374,23 @@
 }
 
 .tickestages {
-    width: 30px
-}
-
-.tickeworkshops {
-    width: 160px;
+    width: 76px
 }
 
 .tickepedagogie {
-    width: 110px;
+    width: 156px;
 }
 
 .tickebenevolat {
-    width: 270px;
+    width: 236px;
 }
 
 .tickesaisonnier {
-    width: 310px;
+    width: 276px;
 }
 
 .tickejob {
-    width: 350px;
+    width: 316px;
 }
 
 /* pour placer les datas dans la grille compétences */
@@ -415,7 +409,7 @@
 body {
     font-family: karla;
     font-size: 13px;
-    line-height: 0.6;
+    line-height: 1;
 }
 
 /* mon nom-prénom */
@@ -424,7 +418,7 @@ h1 {
     font-family: karla;
     font-size: 50px;
     font-weight: 230;
-    line-height: 1;
+    line-height: 1.4;
 }
 
 /* titres des 3 parties du CV */
@@ -434,12 +428,12 @@ h2 {
     line-height: 1;
 }
 
-/* adresse mail */
+/* adresse mail + titre */
 h3 {
     display: inline;
     font-size: 19px;
     font-weight:330;
-    line-height: 0.7;
+    line-height: 1.4;
 }
 
 /*normal mais pour les titres, plus grande hauuteur de lignes */
@@ -447,7 +441,7 @@ h4 {
     display: inline;
     font-size: 15px;
     font-weight: 400;
-    line-height: 1;
+    line-height: 1.4;
 }
 
 /* gras et grand pour les exp professionnelles */
@@ -457,7 +451,7 @@ h5 {
     font-weight: 700; 
 }
 
-/* écriture petite */
+/* écriture petite ville et département des expériences pros */
 h6 {
     display: inline;
     font-size: 11px;
@@ -469,6 +463,7 @@ h6 {
   transform: scale(150%);
 }
 
+
 .camembert {
   width: 24px;
   height: 24px;
@@ -478,4 +473,36 @@ h6 {
     black 0 var(--valeur),
     rgb(255, 235, 161) var(--valeur) 100%
   );
+}
+
+/* petite écriture grise pour les expériences */
+.descriptionexppro {
+    background-color: transparent;
+    font-size: 11px;
+    color: rgb(173, 173, 173);
+}
+
+/* petite écriture grise descriptions formations et diplomes */
+.descriptionformdipl {
+    background-color: transparent;
+    font-size: 11px;
+    color: rgb(108, 108, 108);
+}
+
+/* petite écriture noire détails formations et diplomes */
+.detailformdipl {
+    background-color: transparent;
+    font-size: 11px;
+    color: black;
+    line-height: 0.7;
+}
+
+/* petite écriture grise pour compétences */
+.descriptioncomp {
+    background-color: transparent;
+    display: inline;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 0.7;
+    color: rgb(137, 137, 137);
 }
